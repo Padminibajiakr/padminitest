@@ -1,18 +1,22 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('microegree job only') {
             steps {
+                sh 'echo "this is my first job" '
+                sh 'echo "this is devops test job" '
+                sh 'echo "this is microdegree testing job" '
                 
             }
         }
-        stage('Test') {
+        stage('2nd job') {
             steps {
-                
+               sh 'python3'                
             }
         }
-        stage('Deploy') {
+        stage('hi devops test') {
             steps {
+               sh 'padmini test job'
                 
             }
         }
